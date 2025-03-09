@@ -1,0 +1,39 @@
+research_task:
+  description: >
+    Analyze the job posting URL provided {job_posting_url}
+    to extract key skills, experiences, and qualifications
+    required. Use the tools to gather content and identify
+    and categorize the requirements.
+  expected_output: >
+    A structured list of job requirements, including necessary
+    skills, qualifications, and experiences.
+  agent: researcher
+
+profile_task:
+  description: >
+    Compile a detailed personal and professional profile 
+    using the GitHub {github_url} URLs, and personal portfolio 
+    {personal_portfolio_url}. Utilize tools to extract and 
+    synthesize information from these sources.
+  expected_output: >
+    A comprehensive profile document that includes skills,
+    project experiences, contributions, interests, and 
+    communication style."
+  agent: profiler
+
+resume_strategy_task:
+  description: >
+    Using the profile and job requirements obtained from 
+    previous tasks, tailor the resume to highlight the most 
+    relevant areas. Employ tools to adjust and enhance the 
+    resume content. Make sure this is the best resume even but 
+    don't make up any information. Update every section, 
+    inlcuding the initial summary, work experience, skills, 
+    and education. All to better reflrect the candidates 
+    abilities and how it matches the job posting.
+  expected_output: >
+    An updated resume that effectively highlights the candidate's 
+    qualifications and experiences relevant to the job.
+  agent: resumer_strategist
+
+
